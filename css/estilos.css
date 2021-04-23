@@ -1,1 +1,39 @@
-/*variables css*/
+/*VARIABLES/CUSTOM PROPERTIES css*/
+/* VARIABLES FUNCIONAN MAS RAPIDO EN LOS BROWSER*/
+
+/*CREAR VARIABLES EN :ROOT*/
+
+
+/*LINTER GRAMMAR NAZI JAJAJA*/
+:root{ 
+  --primario-fuente:#000000;  
+  --fondo:#efecec;
+  --naranja-cabecera: #f09e35;
+ }
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     /* se usa select universal pq no son propiedades heredables */
+  }
+/*PONER BACK COLOR DE COLOR PARECIDO AL BACK DE LA FOTO PARA MEJORAR PERFORMANCE*/
+body{ background-image: url('../images/pattern.jpg');
+    font-family: Arial, Helvetica, sans-serif;
+
+ }
+ .cabecera{    display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 25px 0;
+
+  }
+ .cabecera h1{color:var(--naranja-cabecera)
+
+ }
+ .cabecera, .container{
+     max-width: 1000px;
+     margin: auto;
+  }
+  .container{ 
+            background-color: var(--fondo);
+   }
